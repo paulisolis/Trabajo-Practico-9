@@ -1,0 +1,112 @@
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+@media (min-width: 992px){
+
+	.navbar{
+
+		a{
+		display: inline-block;
+		}
+	}
+	.navbar-default nav{
+		text-align: center;
+		a{
+			padding: 0px 20px;
+		}
+		}
+
+
+
+	.foto{
+	background-image: url('../imagenes/imagenheader.jpg');
+	height: 500px;
+	background-size: cover;
+	background-position: center bottom;
+	}
+
+	.banner{
+		color: white;
+		display: block;
+		h1{
+		font-weight: bold;
+		font-size: 60px;
+		padding-top: 70px;
+		}
+		p{
+		font-size: 15px;
+		width: 400px;
+		text-align: left;
+		line-height: 25pt;
+		float: left;
+		padding-top: 80px;
+		}
+	}
+
+	.btn{
+	position: relative; top: -67px;
+	}
+
+
+	.celular{
+	padding: 0px;
+	}
+	.izquierda{
+		float: none;
+		display: inline-block;
+	}
+
+	.grande{
+		    position: relative;
+    left: 1090%;
+	}
+
+
+	.texto-celu-der{
+		@include caracteristicas($alinear-derecha)
+		}
+		.texto-celu-der{
+			position: relative;
+   			right: 15%;
+		}
+}
+
+
+
+
+@media (min-width: 1200px){
+
+	.desaparece{
+		display: block;
+		color: gray;
+		font-size: 40px;
+		text-align: center;
+		position: relative; top: 20px;
+		float: left;
+		margin: -13px;
+	}
+	.grande {
+    position: relative;
+    left: 916%;
+    }
+
+
+    .footer{
+		p{
+		text-align: left;
+		display: inline-block;
+		}
+		li{
+		text-align: right;
+		display: inline-block;
+		}
+	}
+	.footer-menu{
+		display:inline-block;
+		float: right;
+	}
+
+}
+
+
+

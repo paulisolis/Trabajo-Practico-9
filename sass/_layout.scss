@@ -1,0 +1,332 @@
+/************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+
+
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+
+
+
+.navbar{
+	padding-top: 10px;
+
+		a{
+		text-align: center;
+		color: black;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-top: 1%;
+		display: block;
+		letter-spacing: 1px; 
+		&:hover{
+			color:gray;
+			text-decoration: none;
+			}
+		}
+	}
+
+.navbar-default{
+background-color: white;
+border:none;
+}
+
+/*************************************/
+/*=========     BOTON     =========*/
+// /***********************************/
+
+
+.foto{
+ 	background-image: none;
+ }
+ .banner{
+ 	display: none;
+ }
+
+
+.btn{
+	margin: 30px 0px;
+	cursor: text;
+	padding: 3%;
+	border: none;
+	box-shadow: 0px 0px 10px -3px #999;
+	border-radius: 0px;
+}
+
+.btn input{
+	text-align: left;
+}
+
+.label-info{
+	background-color: $color-celeste;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	&:after{
+		content: "Search";
+		margin-left: 5px;
+	}
+	&:hover,
+	&:active,
+	&:focus{
+		color: white;
+		opacity: 100%;
+	}
+}
+
+/*************************************/
+/*=========     CIRCULOS    =========*/
+// /***********************************/
+
+.centrado{
+	display: inline-block;
+	text-align:center;
+		.celeste{
+		@include productos($color-celeste)
+		}
+		.amarillo{
+		@include productos($color-amarillo)
+		}
+		.naranja{
+		@include productos($color-naranja)
+		}
+		.rojo{
+		@include productos($color-rojo)
+		}
+	}
+
+.desaparece{
+	display: none;
+	}
+
+.borde{
+	-webkit-text-stroke: 1px white;
+	}
+
+.texto{
+	p{
+		padding-bottom: 30px;
+	}
+}
+
+
+/*************************************/
+/*=========    TITULO     =========*/
+// /***********************************/
+
+
+.circulo-titular{
+    font-size: 40px;
+    color: $color-celeste;
+    text-align: center;
+}
+
+.servicios{
+	p{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+}
+
+.texto-celu-der{
+		@include caracteristicas($alinear-izquierda)
+		}
+
+.texto-celu-izq{
+		@include caracteristicas($alinear-izquierda)
+		}
+
+.izquierda{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid $color-celeste;
+	color: $color-celeste;
+	float: right;
+	i{
+		font-size: 18px;
+  		position: relative;
+   		top: 7px;
+   		left: 10px;
+	}
+}
+
+.celular{
+	padding: 40px 0px;
+}
+
+
+
+/*************************************/
+/*=========     PRECIOS     =========*/
+// /***********************************/
+
+
+.subir{
+	background-image: url('../imagenes/mujer-con-celular.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.linea{
+	background-color: #DCDCDC;
+	height: 1px;
+	margin: 15px 0px;
+}
+
+
+
+.small{
+	box-shadow: 0px 0px 10px -3px #999;
+    font-family: $fuente;
+    background-color: white;
+    color: gray;
+    margin-bottom: 6%;
+    padding: 30px;
+    width: 48%;
+    margin: 1% 1%;
+    display:inline-block;
+
+    h5{
+    text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 4.3;
+	}
+
+	h2{
+	font-size: 50px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+		&:after{
+          content: ".99";
+          font-size: 20px;
+          vertical-align: top;
+		}	
+		&:before{
+          content: "$";
+          font-size: 0.5em;
+          position: relative;
+          top: -13px;
+		}	
+	}
+
+	p{
+	display: block;
+	text-align: center;
+    position: relative;
+    top: -10px;
+	}
+
+	ul{
+	list-style: none;
+	font-size: 14px;
+	text-align: left;
+	display: inline-block;
+	line-height: 25pt;
+	}
+
+	a{
+	background-color: #00BFFF;
+	display: inherit;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0px 0px 10px -3px #999;
+	padding: 10px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+	}
+}
+
+.numeros-celeste{
+	@include precios($color-celeste)
+}
+.numeros-amarillo{
+	@include precios($color-amarillo)
+}
+.numeros-naranja{
+	@include precios($color-naranja)
+}
+.numeros-rojo{
+	@include precios($color-rojo)
+}
+
+
+
+/***************************************/
+/*=========     HOSTING     =========*/
+/*************************************/
+
+
+
+.fondo{
+	font-family: $fuente;
+	background-color: #142e3f;
+	padding: 40px;
+	margin-top: 40px;
+	text-align: center;
+
+	h1{
+	color: white;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+	a{
+	font-size: 25px;
+	color: $color-celeste;
+	font-weight: bold;
+	&:hover,
+	&:active,
+	&:focus{
+		color: white;
+		text-decoration: none;
+	}
+}
+}
+
+
+.footer{
+	font-family: $fuente;
+	background-color: #091722;
+	padding: 50px;
+	color: white;
+
+	p{
+	text-align: center;
+	}
+	
+	li{
+	text-align: center;
+	list-style: none;
+	}
+
+	a{
+	font-size: 15px;
+	text-decoration: none;
+	color: gray;
+
+	&:hover{
+	color: white;
+	}
+	}
+}
+
+
+.footer-menu{
+}
+
+
+
+/************************************/
+/*=========     FOOTER     =========*/
+/***********************************/

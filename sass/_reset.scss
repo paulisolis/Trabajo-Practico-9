@@ -1,0 +1,54 @@
+/* CSS Document  */
+/* Project name: TP Bootstrap */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Mayo de 2016 */
+/* Author: Name Lastname */
+/* Author's eMail: username@server.com */
+
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+//font-family: 'Roboto Slab'
+	
+
+body{
+	font-family: $fuente;
+	margin: 0;
+	color: gray;
+}
+
+figure{
+	margin: 0;
+	line-height: 0;
+}
+a{
+	outline: none !important;
+}
+
+p{
+	font-size: 13px;
+}
+
+
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px; 
+}
+
+h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+	color: black;
+}
+
+
+ul,
+ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

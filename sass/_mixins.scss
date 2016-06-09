@@ -1,0 +1,81 @@
+// border-radius
+@mixin b-ra($radius){
+	border-radius: $radius;
+}
+
+// box-shadow
+@mixin b-sh($h-off, $v-off, $blur, $color){
+	box-shadow: $h-off $v-off $blur $color;
+}
+
+// transition
+@mixin ttion($ttime){
+	transition: $ttime;
+	-ms-transition: $ttime;
+	-webkit-transition: $ttime;
+}
+
+// spin
+@mixin spin($deg){
+	transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+}
+
+// escale
+@mixin scale($scale){
+	transform: scale($scale);
+	-ms-transform: scale($scale);
+	-webkit-transform: scale($scale);
+}
+
+
+ // 1. Mixin círculos de colores
+
+@mixin productos($color){
+
+		a{
+		margin: 0 auto;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		display: block;
+	    transition: 1.3s ease-in-out;
+	    background-color: $color;
+
+	    &:hover{
+	transform: scale(1.25);
+}
+		}
+
+		p{
+		color: white;
+		font-size: 2.7em;
+		position: relative;
+		text-align:center;
+		position:relative; top: 18%;
+		}
+	}
+
+
+
+@mixin caracteristicas($alinear){
+		text-align: $alinear;
+		h5{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: bold; 
+		}
+		p{
+			margin-bottom: 50px;
+		}
+	}
+
+
+@mixin precios($color){
+	float: right;
+	color: $color;
+}
+
+
+	
